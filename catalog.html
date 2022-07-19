@@ -125,14 +125,16 @@
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="basket-items-list">
                   <li class="basket-item">
-                    <img class="basket-item-image" src="images/catalog/raspberry.jpg" width="46" height="46"
-                      alt="Шарик мороженого «Малинка».">
-                    <div>
-                      <p class="basket-item-title">Малинка</p>
-                      <span class="basket-item-quantity">1 кг</span>
-                      <span class="basket-item-price">x 310 ₽</span>
-                    </div>
-                    <p class="basket-item-amount">310 ₽</p>
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/catalog/raspberry.jpg" width="46" height="46"
+                        alt="Шарик мороженого «Малинка».">
+                      <div>
+                        <p class="basket-item-title">Малинка</p>
+                        <span class="basket-item-quantity">1 кг</span>
+                        <span class="basket-item-price">x 310 ₽</span>
+                      </div>
+                      <p class="basket-item-amount">310 ₽</p>
+                    </a>
                     <button class="basket-item-delete-button" type="button">
                       <svg class="cross-icon" aria-hidden="true" focusable="false" width="10" height="10"
                         viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,14 +145,16 @@
                     </button>
                   </li>
                   <li class="basket-item">
-                    <img class="basket-item-image" src="images/catalog/bubble-gum.jpg" width="46" height="46"
-                      alt="Шарик мороженого «Бабл-гам».">
-                    <div>
-                      <p class="basket-item-title">Бабл-гам</p>
-                      <span class="basket-item-quantity">1,5 кг</span>
-                      <span class="basket-item-price">x 320 ₽</span>
-                    </div>
-                    <p class="basket-item-amount">480 ₽</p>
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/catalog/bubble-gum.jpg" width="46" height="46"
+                        alt="Шарик мороженого «Бабл-гам».">
+                      <div>
+                        <p class="basket-item-title">Бабл-гам</p>
+                        <span class="basket-item-quantity">1,5 кг</span>
+                        <span class="basket-item-price">x 320 ₽</span>
+                      </div>
+                      <p class="basket-item-amount">480 ₽</p>
+                    </a>
                     <button class="basket-item-delete-button" type="button">
                       <svg class="cross-icon" aria-hidden="true" focusable="false" width="10" height="10"
                         viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,10 +209,10 @@
               <legend class="catalog-filter-title">Цена:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="100" name="min-price">₽
+                  <input class="range-input" type="number" value="100" name="min-price" required>₽
                 </label>
                 <label class="catalog-filter-label">
-                  - <input class="range-input" type="number" value="500" name="max-price">₽
+                  - <input class="range-input" type="number" value="500" name="max-price" required>₽
                 </label>
               </div>
               <div class="range-scale-wrapper">
@@ -329,9 +333,13 @@
           </form>
           <ul class="product-list">
             <li class="product-card">
-              <h4 class="product-title">Малинка</h4>
-              <img class="product-image" src="images/catalog/raspberry.jpg" width="168" height="168"
-                alt="Шарик мороженого «Малинка».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Малинка</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/raspberry.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Малинка».">
+              </a>
               <p class="product-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
               <div class="card-container">
                 <b class="product-price">310 ₽/кг</b>
@@ -346,9 +354,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Фисташка</h4>
-              <img class="product-image" src="images/catalog/pistachio.jpg" width="168" height="168"
-                alt="Шарик мороженого «Фисташка».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Фисташка</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/pistachio.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Фисташка».">
+              </a>
               <p class="product-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
               <div class="card-container">
                 <b class="product-price">340 ₽/кг</b>
@@ -363,9 +375,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Черника</h4>
-              <img class="product-image" src="images/catalog/blueberry.jpg" width="168" height="168"
-                alt="Шарик мороженого «Черника».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Черника</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/blueberry.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Черника».">
+              </a>
               <p class="product-description">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="card-container">
                 <b class="product-price">330 ₽/кг</b>
@@ -380,9 +396,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Бабл-гам</h4>
-              <img class="product-image" src="images/catalog/bubble-gum.jpg" width="168" height="168"
-                alt="Шарик мороженого «Бабл-гам».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Бабл-гам</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/bubble-gum.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Бабл-гам».">
+              </a>
               <p class="product-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="card-container">
                 <b class="product-price">320 ₽/кг</b>
@@ -397,9 +417,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Ежевика</h4>
-              <img class="product-image" src="images/catalog/blackberry.jpg" width="168" height="168"
-                alt="Шарик мороженого «Ежевика».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Ежевика</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/blackberry.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Ежевика».">
+              </a>
               <p class="product-description">Сливочное мороженое с&nbsp;ежевичным джемом</p>
               <div class="card-container">
                 <b class="product-price">330 ₽/кг</b>
@@ -414,9 +438,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Банан</h4>
-              <img class="product-image" src="images/catalog/banana.jpg" width="168" height="168"
-                alt="Шарик мороженого «Банан».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Банан</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/banana.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Банан».">
+              </a>
               <p class="product-description">Сливочный пломбир с&nbsp;банановым вкусом</p>
               <div class="card-container">
                 <b class="product-price">340 ₽/кг</b>
@@ -431,9 +459,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Шоколадка</h4>
-              <img class="product-image" src="images/catalog/chocolate.jpg" width="168" height="168"
-                alt="Шарик мороженого «Шоколадка».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Шоколадка</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/chocolate.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Шоколадка».">
+              </a>
               <p class="product-description">Классический шоколадный пломбир</p>
               <div class="card-container">
                 <b class="product-price">270 ₽/кг</b>
@@ -448,9 +480,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Клубничка</h4>
-              <img class="product-image" src="images/catalog/strawberry.jpg" width="168" height="168"
-                alt="Шарик мороженого «Клубничка».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Клубничка</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/strawberry.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Клубничка».">
+              </a>
               <p class="product-description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               <div class="card-container">
                 <b class="product-price">300 ₽/кг</b>
@@ -465,9 +501,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Лимон</h4>
-              <img class="product-image" src="images/catalog/lemon.jpg" width="168" height="168"
-                alt="Шарик мороженого «Лимон».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Лимон</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/lemon.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Лимон».">
+              </a>
               <p class="product-description">Освежающий лимонный сорбет</p>
               <div class="card-container">
                 <b class="product-price">310 ₽/кг</b>
@@ -482,9 +522,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Ментол</h4>
-              <img class="product-image" src="images/catalog/menthol.jpg" width="168" height="168"
-                alt="Шарик мороженого «Ментол».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Ментол</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/menthol.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Ментол».">
+              </a>
               <p class="product-description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               <div class="card-container">
                 <b class="product-price">320 ₽/кг</b>
@@ -499,9 +543,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Орешек</h4>
-              <img class="product-image" src="images/catalog/nut.jpg" width="168" height="168"
-                alt="Шарик мороженого «Орешек».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Орешек</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/nut.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Орешек».">
+              </a>
               <p class="product-description">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
               <div class="card-container">
                 <b class="product-price">360 ₽/кг</b>
@@ -516,9 +564,13 @@
               </div>
             </li>
             <li class="product-card">
-              <h4 class="product-title">Крем-брюле</h4>
-              <img class="product-image" src="images/catalog/creme-brulee.jpg" width="168" height="168"
-                alt="Шарик мороженого «Крем-брюле».">
+              <a class="product-title-link" href="#">
+                <h4 class="product-title">Крем-брюле</h4>
+              </a>
+              <a class="product-image-link" href="#">
+                <img class="product-image" src="images/catalog/creme-brulee.jpg" width="168" height="168"
+                  alt="Шарик мороженого «Крем-брюле».">
+              </a>
               <p class="product-description">Классическое <br>крем-брюле</p>
               <div class="card-container">
                 <b class="product-price">280 ₽/кг</b>
@@ -535,7 +587,7 @@
           </ul>
           <div class="pagination-container">
             <button class="button button-main" type="button">Показать ещё</button>
-            <ul class="pagination">
+            <ol class="pagination">
               <li>
                 <a class="pagination-link pagination-prev" href="#">
                   <svg class="arrow-icon" aria-hidden="true" focusable="false" width="6" height="12" viewBox="0 0 6 12"
@@ -571,7 +623,7 @@
                   <span class="visually-hidden">Следующая страница.</span>
                 </a>
               </li>
-            </ul>
+            </ol>
           </div>
         </section>
       </div>
@@ -616,8 +668,8 @@
       <section class="footer-navigation">
         <h3 class="visually-hidden">Навигационное меню</h3>
         <ul class="navigation-list navigation-footer">
-          <li class="navigation-item navigation-strong">
-            <a class="navigation-link" href="#">Для поставщиков</a>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-strong" href="#">Для поставщиков</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Наши документы</a>
@@ -632,7 +684,7 @@
       </section>
       <section class="htmlacademy">
         <h3 class="visually-hidden">Сайт разработчика</h3>
-        <a href="https://htmlacademy.ru/">
+        <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" src="images/logos/logo-htmlacademy.svg" width="93" height="27"
             alt="Логотип сайта разработчика.">
         </a>
